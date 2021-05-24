@@ -1,10 +1,10 @@
 import os
 
 if os.name == 'posix':
-      _ = os.system('clear')
-else:
-      # for windows platfrom
-      _ = os.system('cls')
+    _ = os.system('clear')
+else:    
+    _ = os.system('cls')
+
 renta=0.00
 print('Calculo de Renta \n')
 salario=float(input('Ingrese su salario: '))
