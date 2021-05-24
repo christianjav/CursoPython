@@ -1,5 +1,12 @@
+import os
+
+if os.name == 'posix':
+      _ = os.system('clear')
+else:
+      # for windows platfrom
+      _ = os.system('cls')
 renta=0.00
-print('Calculo de Renta \\n')
+print('Calculo de Renta \n')
 salario=float(input('Ingrese su salario: '))
 
 if (salario>0):
@@ -21,4 +28,5 @@ if sg>=915.82 and sg<=2058.67:
      renta=(sg-915.82)*0.2 + 60.0
 if sg>= 2058.68:
     renta=(sg-2058.68)*0.3 + 288.57
-print('La renta es de: ', renta)
+
+print("La renta mensual es de: ", format(renta, '.2f'))
