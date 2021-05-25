@@ -26,7 +26,7 @@ if minutos>0:
 if horas>0:
     total=horas*tarifa
 
-total=total+fraccion
+total+=fraccion
 print('\n')
 
 print('-----Ticket de Pago--------')

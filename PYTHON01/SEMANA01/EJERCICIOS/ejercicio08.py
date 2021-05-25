@@ -18,4 +18,5 @@ if distancia>1000:
     total=montofijo+((distancia-300)*15 + (distancia-1000)*10)
 
 print('El total a pagar por alquiler: $', total)
+print('El impuesto pagado es: $', total*0.2)
 
