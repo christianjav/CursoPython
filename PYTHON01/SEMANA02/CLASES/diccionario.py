@@ -8,7 +8,6 @@ diccionario['FK']= 'Llave foranea'
 
 print(diccionario)
 
-
 for k, v in diccionario.items():
     print(k, v)
 
