@@ -1,15 +1,19 @@
-""" 
-E5. Escribir una función que reciba una cadena y devuelva un diccionario con la cantidad de
-apariciones de cada palabra en la cadena. Por ejemplo, si recibe "Qué lindo día que hace hoy" debe
-devolver: 'que': 2, 'lindo': 1, 'día': 1, 'hace': 1, 'hoy': 1
-"""
+#EJERCICIO05
+#PROGRAMA PARA CONTAR PALABRAS REPETIDAS
 
 import os
-os.system ("cls")
 
+def limpiar_pantalla():
+    if os.name == 'posix':
+        _ = os.system('clear')
+    else:
+        # for windows platfrom
+        _ = os.system('cls')
+
+limpiar_pantalla()
 
 diccionario = {}
-frase = input("Escriba una frase, que repita palabras :")
+frase = input("Escriba una frase, que repita palabras: ")
 frase_palabras = frase.lower().split(" ")
 for palabra in frase_palabras:
 	if palabra in diccionario:
