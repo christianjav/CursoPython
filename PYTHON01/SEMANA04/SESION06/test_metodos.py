@@ -1,8 +1,7 @@
-from cliente import Cliente
 from empleado import Empleado
 from cliente import Cliente
 
-e = Empleado("Diana")
+e = Empleado("")
 
 if e:
     print(e.nombre)
@@ -11,5 +10,6 @@ else:
 
 del e
 
-#c = Cliente("Alicia", 30)
-#print(int(c))
+c = Cliente("alicia", 30)
+print(int(c))
+
